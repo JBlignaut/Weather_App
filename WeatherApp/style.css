@@ -30,7 +30,7 @@ h3{
     padding: 20px;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
-    width: 450px;
+    width: 500px;
 }
 
 .w_card:hover{
@@ -68,13 +68,29 @@ h3{
     -webkit-background-clip: text;
 }
 
-#w_info{
-    display: none;
+#weather_cards_container {
+    display: flex;               /* Use flexbox for layout */
+    overflow-x: auto;           /* Enable horizontal scrolling */
+    overflow-y: hidden;         /* Hide vertical overflow */
+    white-space: nowrap;        /* Prevent wrapping of child elements */
+    gap: 20px;                  /* Add some space between the cards */
+    margin-top: 20px;           /* Add margin above the cards */
+    padding: 10px;              /* Add padding around the container */
 }
 
+.w_info {
+    display: inline-block;       /* Keep each card inline for horizontal layout */
+    width: 270px;                /* Set a fixed width for each card */
+    padding: 15px;              /* Add padding inside the card */
+    border-radius: 10px;        /* Round the corners of the card */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+    text-align: center;
+}
+
+
 #weather_icon{
-    width: 170px;
-    height: 170px;
+    width: 200px;
+    height: 200px;
 }
 
 #temp{

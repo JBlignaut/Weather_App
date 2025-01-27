@@ -3,7 +3,7 @@ const apiKey ='f00c38e0279b7bc85480c3fe775d518c';
 
 $(document).ready(function(){
     defaultweatherFin('Johannesburg');
-    weatherFin('');
+    weatherFin(``);
 });
 
 async function defaultweatherFin(city){
@@ -40,6 +40,13 @@ function weatherShowFin(data){
 }
 
 async function weatherFin(city){
+    //Check if input = empty
+    if(!city){
+        return;
+    }else{
+
+   
+
     const temp = `${url}?q=${city}&appid=${apiKey}&units=metric`;
 
     try{
@@ -53,4 +60,5 @@ async function weatherFin(city){
     } catch(err){
         console.error('Error fetching weather data: ', err);
     }
+}
 }
