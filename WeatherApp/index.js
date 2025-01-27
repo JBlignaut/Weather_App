@@ -27,6 +27,6 @@ function weatherShowFin(data){
     $('#temp').html(`${data.main.temp} &deg;C`);
     $('#description').text(data.weather[0].description);
     $('#wind_speed').html(`Wind Speed: ${data.wind.speed} m/s`);
-    $('#weather_icon').attr('src', `....`);
+    $('#weather_icon').attr('src', `http://openweathermap.org/img/w/${data.weather[0].icon}.png`);
     $('#w_info').fadeIn();
 }
