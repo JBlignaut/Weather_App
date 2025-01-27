@@ -21,6 +21,7 @@ h3{
     background: linear-gradient(to right, #006ff6, #4affd5, #4affc0);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
+    background-clip: text;
     margin-bottom: 10px;
 }
 
@@ -66,6 +67,7 @@ h3{
     background: linear-gradient(to top, #000000, #373737);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
+    background-clip: text;
 }
 
 #weather_cards_container {
