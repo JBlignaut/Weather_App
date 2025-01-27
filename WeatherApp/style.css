@@ -7,3 +7,73 @@ body{
     height: 100vh;
     background: linear-gradient(to right, #f12711, #f5af19);
 }
+
+.container{
+    text-align: center;
+}
+
+.w_card{
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    width: 450px;
+}
+
+.w_card:hover{
+    transform: scale(1.05);
+}
+
+#city_input{
+    padding: 15px;
+    margin: 10px 0;
+    width: 70%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#city_input_btn{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #2196F3;
+    color: white;
+    cursor: pointer;
+}
+
+#city_input_btn:hover{
+    background-color: #1565C0;
+}
+
+#w_info{
+    display: none;
+}
+
+#weather_icon{
+    width: 100px;
+    height: 100px;
+}
+
+#temp{
+    margin: 8px 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#description{
+    margin: 0 0 10px 0;
+    font-size: 18px;
+}
+
+#wind_speed{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#date{
+    font-size: 14px;
+    color: rgb(255, 0, 0);
+}
